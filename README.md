@@ -36,12 +36,32 @@ DICA:
 
 ### 1	COMPONENTES<br>
 Integrantes do grupo<br>
+Brendon Mauro brendonmauro@gmail.com:<br>
+Jennifer de Castro : jenny_cg23@hotmail.com<br>
+Joel Will: joel-willb@hotmail.com <br>
+Larrisa Motta: larissasantosdamotta@gmail.com<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados <b> Ctrl+Money</b>
+<br>e motivação da escolha realizada. <br>
+
+Ter um bom controle dos seus gastos é uma necessidade premente de todo cidadão. Tempo é dinheiro. E, dinheiro bem administrado, é sinônimo de sono tranquilo.
+Portanto, Ctrl+Money  vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro e ainda oferece funcionalidades de previsão para auxiliar o melhor planejamento do seu futuro e poder instituir metas a serem cumpridas.
       
 ### 3	MINI-MUNDO<br>
-Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
+O sistema opera com usuários cadastrando suas receitas e despesas de cada mês. Um usuário consegue acessar o portal através de um login e uma senha.
+Para facilitar o gerenciamento de formas de pagamento, um usuário pode cadastrar seus cartões de crédito, informando o nome do cartão, seu limite, dia de fechamento da conta e data de vencimento da mesma.
+Uma pessoa possui receitas e despesas, que serão subdivididas em categorias. As categorias envolvendo entrada de dinheiro são: salário, vendas, pensão e outros. Já as categorias envolvendo a saída de dinheiro são: alimentação, moradia, educação, transporte, lazer e outros. Um usuário poderá visualizar qual categoria é mais rentável ou gera mais gastos em um determinado mês. Além disso, o site será capaz de exibir o fluxo de caixa de um ano selecionado.
+Dentro do portal, é possível exibir as receitas e/ou despesas de um determinado mês subdividindo em suas categorias. Dentro destas categorias, é possível detalhá-las, exibindo todos os itens de despesas referentes ao grupo selecionado.
+As receitas possuem nome, valor, data de recebimento, e se é fixa. Já as despesas dispõem de nome, data de compra, forma de pagamento, além de valor e data de pagamento (se pago em dinheiro), ou valor da parcela e número de parcelas (caso seja pago no cartão). O cliente tem acesso a exibição dos gastos de um cartão selecionado em um determinado mês.
+No final de cada mês, ocorre o fechamento de contas, onde é realizado um cálculo para saber se todas as contas foram de fato pagas. O usuário informa a quantia que realmente foi paga naquele mês específico e, caso não seja igual o valor total esperado para sanar todas as despesas daquele mês, é calculado a diferença entre o valor esperado e o valor real pago. O resultado obtido desta conta será somado no próximo mês, aparecendo como despesa acumulada.
+As receitas e/ou despesas em dinheiro serão consideradas como recebidas e/ou pagas quando a data de recebimento/pagamento forem maiores ou iguais ao dia corrente.
+Somando-se a isso, é possível um usuário ter acesso de total de receitas e/ou despesas de um mês específico. Além disso, é possível visualizar através de gráficos, o quanto de orçamento ele possui em caixa no momento atual. Este valor é calculado baseado no seu histórico, onde é somado o valor total resultante de todos os meses anteriores.
+Será possível visualizar, através de um gráfico, a previsão de receitas, despesas e caixa disponíveis para o cliente nos próximos três meses após o mês atual. O cálculo é realizado de acordo com o histórico do usuário, portanto é imprescindível que o usuário possua pelo menos 3 meses com dados registrados.
+Possíveis melhorias para um projeto futuro:
+- Mostrar o quanto os juros pode impactar um usuário.
+- Analisar o quanto de renda o usuário possui e assim, sugerir possíveis investimentos / aplicações do dinheiro baseado nos dados da bolsa e afins
+Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados pelos membros do grupo
 
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
