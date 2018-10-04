@@ -1,4 +1,4 @@
-# TRABALHO 01 : Título do trabalho
+# TRABALHO 01 : Ctrl+Money
 Trabalho desenvolvido durante a disciplina de BD
 
     O referido projeto poderá ser:
@@ -64,18 +64,15 @@ Possíveis melhorias para um projeto futuro:
 Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados pelos membros do grupo
 
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/balsamiq.png?raw=true "Title")
+[Arquivo com os protótipos em html](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Prototipo_Ctrl%2BMoney.zip)
 
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20conceitual.png "Modelo Conceitual")
     
-     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
+
 ## Data de Entrega: (23/08/2018) 
 (Apresentação para o professor em sala de aula)
 
@@ -95,7 +92,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
 ### 6	MODELO LÓGICO<br>
+
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Logico.png "Modelo Lógico")
+
 ### 7	MODELO FÍSICO<br>
+
+[MODELO FISICO](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/ModeloFisico.sql "Modelo Fisico")
+
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
