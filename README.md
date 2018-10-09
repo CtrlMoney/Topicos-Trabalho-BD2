@@ -85,6 +85,56 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
     b) justifique!
 
 #### 5.4 DESCRIÇÃO DOS DADOS 
+    
+    USUARIO : Tabela que contém dados básicos comuns a usuario
+	id : 
+	login: Campo que armazena o login do usuario
+	senha: Campo que armazena a senha do usuario
+
+PESSOA : Tabela que contém dados sobre pessoa
+	id: campo identificador de pessoa
+	nome: Campo que armazena o nome da pessoa (e usuario)
+	data_nasc: Campo que armazena a data_nasc da pessoa (e usuario)
+	cpf: campo que aramazena o cpf da pessoa (e usuario)
+
+CARTAO : Tabela que armazena dados do cartão
+	id: campo que armazena o identificador do cartão
+	nome: campo que armazena o nome do proprietário do cartão
+	limite: campo que armazena o limite de compra do cartão
+	dia_fechamento: campo que armazena o dia de fechamento, de cada mês, do cartão
+	dia_vencimento: campo que armazena da data de vencimento, de cada mês, do cartão
+	numero: campo que armazena o númerodo cartão	
+	
+DESPESA : Tabela que contém dados sobre a despesa
+	id: campo que armazena o identificador da despesa
+	valor: campo que armazena o valor da despesa
+	nome: campo que armazena o nome da despesa
+	data_pag: campo que armazena a data que será(ou foi) efetuado o pagamento   
+	data_compra: campo que armazena a data que foi feita a compra da despesa
+	despesa_fixa: este campo identifica se a despesa é fixa ou não (se será adicionada ou não aos próximos meses)
+
+CATEGORIA_DESPESA : Tabela que possui atributos que identificam a categoria da despesa
+	id: campo que armazena o identificador da categoria da despesa
+	nome_categ: campo que armazena o nome da categoria da despesa
+
+FORMA_PAG : Tabela que permite colocar formas de pagamento da despesa
+	id: campo que armazena o identificador da forma de pagamento
+	tipo_pag: campo que armazena o tipo da forma de pagamento
+
+PARCELAMENTO : Tabela que contém dados sobre o número de parcelamento de uma despesa
+	num_parcelas : campo que armazena o número de parcelas de um parcelamento realizado
+	
+RECEITA: Tabela que armazena dados sobre a receita
+	id: campo que armazena o identificador da receita
+	nome: campo que armazena o nome da receita
+	valor: campo que armazena o valor(em reais) da receita
+	data_recebimento: campo que aramazena o valor que foi creditado a receita
+	receita_fixa: campo que armazena se a receita é fixa ou não(se será adicionada ou não aos próximos meses)
+
+CATEGORIA_RECEITA : Tabela que possui atributos que identificam a categoria da receita
+	id: campo que armazena o identificador da categoria da receita
+	nome_categ: campo que armazena o nome da categoria da despesa
+    
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
