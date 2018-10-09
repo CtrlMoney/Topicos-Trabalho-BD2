@@ -90,22 +90,19 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 	id : 
 	login: Campo que armazena o login do usuario
 	senha: Campo que armazena a senha do usuario
-
-PESSOA : Tabela que contém dados sobre pessoa
+    PESSOA : Tabela que contém dados sobre pessoa
 	id: campo identificador de pessoa
 	nome: Campo que armazena o nome da pessoa (e usuario)
 	data_nasc: Campo que armazena a data_nasc da pessoa (e usuario)
 	cpf: campo que aramazena o cpf da pessoa (e usuario)
-
-CARTAO : Tabela que armazena dados do cartão
+    CARTAO : Tabela que armazena dados do cartão
 	id: campo que armazena o identificador do cartão
 	nome: campo que armazena o nome do proprietário do cartão
 	limite: campo que armazena o limite de compra do cartão
 	dia_fechamento: campo que armazena o dia de fechamento, de cada mês, do cartão
 	dia_vencimento: campo que armazena da data de vencimento, de cada mês, do cartão
 	numero: campo que armazena o númerodo cartão	
-	
-DESPESA : Tabela que contém dados sobre a despesa
+     DESPESA : Tabela que contém dados sobre a despesa
 	id: campo que armazena o identificador da despesa
 	valor: campo que armazena o valor da despesa
 	nome: campo que armazena o nome da despesa
