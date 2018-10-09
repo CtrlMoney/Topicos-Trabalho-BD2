@@ -77,13 +77,11 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 (Apresentação para o professor em sala de aula)
 
 #### 5.3 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
-
+	PARCELAMENTO: foi criada esta entidade que herda de despesa, para tratar despesas que são parceladas
+	SEM_PARCELAMENTO: foi criada esta entida que herda de despesa, para tirar o atributo data_pag da tabela despesa, pois a data de pagamento de uma despesa parcelada já está cadastrada no cartão
+	FORMA_PAG: foi criada esta entidade para dar ao usuário mais opções de formas de pagamento, além de dinheiro e cartão
+	despesa_fixa: este atributo foi criado para adicionar, nos próximos meses, a despesa que foi marcada como fixa
+	receita_fixa: este atributo foi criado para adicionar, nos próximos meses, a receita que foi marcada como fixa																																					
 #### 5.4 DESCRIÇÃO DOS DADOS 
     
     USUARIO : Tabela que contém dados básicos comuns a usuario
@@ -117,6 +115,8 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 		tipo_pag: campo que armazena o tipo da forma de pagamento
     PARCELAMENTO : Tabela que contém dados sobre o número de parcelamento de uma despesa
 		num_parcelas : campo que armazena o número de parcelas de um parcelamento realizado
+    SEM_PARCELAMENTO : Tabela que contém dados sobre despesa não parcelada
+		data_pag: campo que
     RECEITA: Tabela que armazena dados sobre a receita
 		id: campo que armazena o identificador da receita
 		nome: campo que armazena o nome da receita
@@ -127,11 +127,6 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 		id: campo que armazena o identificador da categoria da receita
 		nome_categ: campo que armazena o nome da categoria da despesa
 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
 ### 6	MODELO LÓGICO<br>
 
