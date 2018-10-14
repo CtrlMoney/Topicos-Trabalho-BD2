@@ -149,6 +149,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         b) inclusão das instruções de inserção dos dados nas referidas tabelas
         c) inclusão das instruções para execução de outros procedimentos necessários
 
+
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
 
@@ -158,7 +159,25 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
-    
+SELECT * FROM pessoa_usuario LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG) <br> 
+SELECT * FROM receita LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG) <br> 
+SELECT * FROM categoria_receita LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_receita.PNG) <br> 
+SELECT * FROM despesa LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/despesa.PNG) <br> 
+SELECT * FROM forma_pag LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/forma_pag.PNG) <br> 
+SELECT * FROM categoria_despesa LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG) <br> 
+SELECT * FROM parcelamento LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/parcelamento.PNG) <br> 
+SELECT * FROM pessoa_cartao LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG) <br> 
+SELECT * FROM carato LIMIT 10 <br> 
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG) <br> 
+
 <br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
