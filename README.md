@@ -36,10 +36,10 @@ DICA:
 
 ### 1	COMPONENTES<br>
 Integrantes do grupo<br>
-Brendon Mauro brendonmauro@gmail.com:<br>
+Brendon Mauro : brendonmauro@gmail.com<br>
 Jennifer de Castro : jenny_cg23@hotmail.com<br>
-Joel Will: joel-willb@hotmail.com <br>
-Larrisa Motta: larissasantosdamotta@gmail.com<br>
+Joel Will : joel-willb@hotmail.com <br>
+Larrisa Motta : larissasantosdamotta@gmail.com<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <b> Ctrl+Money</b>
