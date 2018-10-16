@@ -70,7 +70,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20conceitual.png "Modelo Conceitual")
+![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png "Modelo Conceitual")
     
 
 ## Data de Entrega: (23/08/2018) 
