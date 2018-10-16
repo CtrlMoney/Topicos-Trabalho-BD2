@@ -69,6 +69,8 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 		dia_fechamento: campo que armazena o dia de fechamento, de cada mês, do cartão
 		dia_vencimento: campo que armazena da data de vencimento, de cada mês, do cartão
 		numero: campo que armazena o númerodo cartão	
+    PESSOA_CARTAO: Tabela que relaciona pessoa com seus cartões (cartões com seus "usuários")
+    		ativo: campo que indica se o cartão da pessoa está ativo (útil para apagar lógicamente o cartão da pessoa)
     DESPESA : Tabela que contém dados sobre a despesa
 		id: campo que armazena o identificador da despesa
 		valor: campo que armazena o valor da despesa
@@ -85,7 +87,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
     PARCELAMENTO : Tabela que contém dados sobre o número de parcelamento de uma despesa
 		num_parcelas : campo que armazena o número de parcelas de um parcelamento realizado
     SEM_PARCELAMENTO : Tabela que contém dados sobre despesa não parcelada
-		data_pag: campo que
+		data_pag: campo que foi feito o pagamento
     RECEITA: Tabela que armazena dados sobre a receita
 		id: campo que armazena o identificador da receita
 		nome: campo que armazena o nome da receita
