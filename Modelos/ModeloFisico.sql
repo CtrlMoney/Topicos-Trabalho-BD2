@@ -1,4 +1,4 @@
-CREATE TABLE Pessoa_Usuario (
+﻿CREATE TABLE Pessoa_Usuario (
     data_nasc DATE NOT NULL,
     nome VARCHAR(150) NOT NULL,
     cpf CHAR(11) NOT NULL,
@@ -86,21 +86,21 @@ ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_2
  
 ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_3
     FOREIGN KEY (fk_categoria_despesa)
-    REFERENCES Forma_Pag (id)
+    REFERENCES Categoria_Despesa (id)
     ON DELETE RESTRICT ON UPDATE CASCADE;
  
 ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_4
     FOREIGN KEY (fk_forma_pag)
-    REFERENCES Categoria_Despesa (id)
+    REFERENCES Forma_Pag (id)
     ON DELETE RESTRICT ON UPDATE CASCADE;
 
 CREATE TABLE Sem_Parcelamento (
     data_pag DATE,
-    fk_Despesa_id INTEGER PRIMARY KEY
+    fk_despesa INTEGER PRIMARY KEY
 );
  
 ALTER TABLE Sem_Parcelamento ADD CONSTRAINT FK_Sem_Parcelamento_2
-    FOREIGN KEY (fk_Despesa_id)
+    FOREIGN KEY (fk_despesa)
     REFERENCES Despesa (id)
     ON DELETE CASCADE;
 
