@@ -1,5 +1,6 @@
 package com.mycompany.faker;
 
+import com.github.javafaker.CreditCardType;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
@@ -32,6 +33,7 @@ public class CartaoGenerator extends Thread {
     private void generate() throws IOException {
         Faker faker = new Faker(new Locale("pt-BR"));
 
+        int numeroCartao = 1;
         for (int i = 0; i < qtdInsert; i++) {
             String sql = "INSERT INTO cartao (nome, limite, dia_fechamento, dia_vencimento, numero) VALUES ";
             fw.write(sql);
@@ -40,20 +42,10 @@ public class CartaoGenerator extends Thread {
                 String nome = cartoes[faker.random().nextInt(0, 3)];
                 double limite = faker.number().randomDouble(2, 300, 10000);
 
-                // TODO -> Precisa ser DATE? ou Pode ser só um dia msm?
-                Date diaFechamento = faker.date().birthday(0, 1);
+                int diaFechamento = faker.random().nextInt(1,28);
+                int diaVenc = faker.random().nextInt(1,28);
 
-                Calendar calendar = Calendar.getInstance();
-                calendar.setTime(diaFechamento);
-                calendar.add(Calendar.DATE, faker.random().nextInt(10, 15));
-                Date diaVenc = calendar.getTime();
-
-                // TODO -> TEM QUE VER SE CABE UM NUMERO, ISSO É PRA TESTE
-                long numero = faker.number().numberBetween(1000000000, 999999999);
-
-                sql = String.format(Locale.US,"('%s',%.2f,'%s','%s',%d)", nome, limite, 
-                        FakerBd.getDataString(diaFechamento),
-                        FakerBd.getDataString(diaVenc), numero);
+                sql = String.format(Locale.US,"('%s',%.2f,%d, %d,'%d')", nome, limite, diaFechamento,diaVenc, numeroCartao);
 
                 fw.write(sql);
                 if (j != qtdLinhasPorVez - 1) {
@@ -63,6 +55,7 @@ public class CartaoGenerator extends Thread {
                 }
 
                 fw.flush();
+                numeroCartao++;
             }
 
             System.out.println("Pacote de Cartão nº " + (i + 1) + " com " + qtdLinhasPorVez + " linhas");

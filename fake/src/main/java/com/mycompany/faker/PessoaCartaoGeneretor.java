@@ -34,15 +34,14 @@ public class PessoaCartaoGeneretor extends Thread {
         Faker faker = new Faker(new Locale("pt-BR"));
 
         for (int i = 0; i < qtdInsert; i++) {
-            String sql = "INSERT INTO pessoa_cartao (fk_pessoa_usuario, fk_cartao, ativo) VALUES ";
+            String sql = "INSERT INTO pessoa_cartao (fk_pessoa_usuario, fk_cartao) VALUES ";
             fw.write(sql);
 
             for (int j = 0; j < qtdLinhasPorVez; j++) {
                 int fkPessoa = faker.random().nextInt(1,qtdPessoas);
                 int fkCartao = faker.random().nextInt(1, qtdCartoes);
-                boolean ativo = faker.random().nextBoolean();
                 
-                sql = String.format("(%d,%d,%b)", fkPessoa, fkCartao, ativo);
+                sql = String.format("(%d,%d)", fkPessoa, fkCartao);
 
                 fw.write(sql);
                 if (j != qtdLinhasPorVez - 1) {
