@@ -178,7 +178,7 @@ SELECT * FROM forma_pag LIMIT 10;
 SELECT * FROM categoria_despesa LIMIT 10;
 ```
  <br> 
-  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG"></p>
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.png"></p>
  <br> 
 
 ```sql
@@ -203,7 +203,7 @@ SELECT * FROM pessoa_cartao LIMIT 10;
 SELECT * FROM cartao LIMIT 10;
 ```
  <br> 
-  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG"></p>
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.png"></p>
  <br> 
 
 <br>
