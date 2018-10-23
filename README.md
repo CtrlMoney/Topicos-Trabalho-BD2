@@ -112,6 +112,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         a) obtenção dos dados
         b) obtenção de códigos reutilizados
         c) fontes de estudo para desenvolvimento do projeto
+	Os dados foram obtidos utilizando a linguagem Java. Foi desenvolvido através do Java Faker gerando um milhão e meio de resgistros.
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
