@@ -145,6 +145,7 @@ SELECT * FROM receita LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG) <br> 
+
 ```sql
 --SELECT 3:
 SELECT * FROM categoria_receita LIMIT 10;
