@@ -1,4 +1,4 @@
-﻿CREATE TABLE Pessoa_Usuario (
+CREATE TABLE Pessoa_Usuario (
     data_nasc DATE NOT NULL,
     nome VARCHAR(150) NOT NULL,
     cpf CHAR(11) NOT NULL,
@@ -12,15 +12,14 @@ CREATE TABLE Cartao (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     limite REAL NOT NULL,
-    dia_fechamento DATE NOT NULL,
-    dia_vencimento DATE NOT NULL,
-    numero BIGINT NOT NULL
+    dia_fechamento INTEGER NOT NULL,
+    dia_vencimento INTEGER NOT NULL,
+    numero VARCHAR(16) NOT NULL UNIQUE
 );
 
 CREATE TABLE Pessoa_Cartao (
     fk_pessoa_usuario INTEGER NOT NULL,
-    fk_cartao INTEGER NOT NULL,
-    ativo BOOLEAN
+    fk_cartao INTEGER NOT NULL
 );
  
 ALTER TABLE Pessoa_Cartao ADD CONSTRAINT FK_Pessoa_Cartao_1
@@ -85,13 +84,13 @@ ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_2
     ON DELETE CASCADE ON UPDATE CASCADE;
  
 ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_3
-    FOREIGN KEY (fk_categoria_despesa)
-    REFERENCES Categoria_Despesa (id)
+    FOREIGN KEY (fk_forma_pag)
+    REFERENCES Forma_Pag (id)
     ON DELETE RESTRICT ON UPDATE CASCADE;
  
 ALTER TABLE Despesa ADD CONSTRAINT FK_Despesa_4
-    FOREIGN KEY (fk_forma_pag)
-    REFERENCES Forma_Pag (id)
+    FOREIGN KEY (fk_categoria_despesa)
+    REFERENCES Categoria_Despesa (id)
     ON DELETE RESTRICT ON UPDATE CASCADE;
 
 CREATE TABLE Sem_Parcelamento (
