@@ -152,24 +152,28 @@ SELECT * FROM categoria_receita LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_receita.PNG) <br> 
+
 ```sql
 --SELECT 4:
 SELECT * FROM despesa LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/despesa.PNG) <br> 
+
 ```sql
 --SELECT 5:
 SELECT * FROM forma_pag LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/forma_pag.PNG) <br> 
+
 ```sql
 --SELECT 6:
 SELECT * FROM categoria_despesa LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG) <br> 
+
 ```sql
 --SELECT 7:
 SELECT * FROM parcelamento LIMIT 10;
@@ -177,12 +181,14 @@ SELECT * FROM parcelamento LIMIT 10;
 
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/parcelamento.PNG) <br> 
+
 ```sql
 --SELECT 8:
 SELECT * FROM pessoa_cartao LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG) <br> 
+
 ```sql
 --SELECT 9:
 SELECT * FROM cartao LIMIT 10;
