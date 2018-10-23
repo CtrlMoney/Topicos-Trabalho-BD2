@@ -69,8 +69,6 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 		dia_fechamento: campo que armazena o dia de fechamento, de cada mês, do cartão
 		dia_vencimento: campo que armazena da data de vencimento, de cada mês, do cartão
 		numero: campo que armazena o númerodo cartão	
-    PESSOA_CARTAO: Tabela que relaciona pessoa com seus cartões (cartões com seus "usuários")
-    		ativo: campo que indica se o cartão da pessoa está ativo (útil para apagar lógicamente o cartão da pessoa)
     DESPESA : Tabela que contém dados sobre a despesa
 		id: campo que armazena o identificador da despesa
 		valor: campo que armazena o valor da despesa
