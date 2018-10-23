@@ -137,6 +137,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 SELECT * FROM pessoa_usuario LIMIT 10;
 ```
  <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG"></p>
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG) <br> 
 
 ```sql
