@@ -138,42 +138,48 @@ SELECT * FROM pessoa_usuario LIMIT 10;
 ```
  <br> 
  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG"></p>
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG) <br> 
+
 
 ```sql
 --SELECT 2:
 SELECT * FROM receita LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG) <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG"></p>
+ <br> 
 
 ```sql
 --SELECT 3:
 SELECT * FROM categoria_receita LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_receita.PNG) <br> 
+   <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_receita.PNG"></p>
+
 
 ```sql
 --SELECT 4:
 SELECT * FROM despesa LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/despesa.PNG) <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/despesa.PNG"></p>
+
+
 
 ```sql
 --SELECT 5:
 SELECT * FROM forma_pag LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/forma_pag.PNG) <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/forma_pag.PNG"></p>
+ <br> 
 
 ```sql
 --SELECT 6:
 SELECT * FROM categoria_despesa LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG) <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG"></p>
+ <br> 
 
 ```sql
 --SELECT 7:
@@ -181,21 +187,24 @@ SELECT * FROM parcelamento LIMIT 10;
 ```
 
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/parcelamento.PNG) <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/parcelamento.PNG"></p>
+
 
 ```sql
 --SELECT 8:
 SELECT * FROM pessoa_cartao LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG) <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG"></p>
+ <br> 
 
 ```sql
 --SELECT 9:
 SELECT * FROM cartao LIMIT 10;
 ```
  <br> 
-![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG) <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG"></p>
+ <br> 
 
 <br>
 
