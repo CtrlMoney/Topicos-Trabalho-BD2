@@ -132,7 +132,11 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
-SELECT * FROM pessoa_usuario LIMIT 10 <br> 
+```sql
+--SELECT 1:
+SELECT * FROM pessoa_usuario LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG) <br> 
 SELECT * FROM receita LIMIT 10 <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG) <br> 
@@ -150,7 +154,6 @@ SELECT * FROM pessoa_cartao LIMIT 10 <br>
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG) <br> 
 SELECT * FROM carato LIMIT 10 <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG) <br> 
-
 <br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
