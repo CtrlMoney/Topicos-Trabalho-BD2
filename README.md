@@ -138,22 +138,57 @@ SELECT * FROM pessoa_usuario LIMIT 10;
 ```
  <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_usuario.PNG) <br> 
-SELECT * FROM receita LIMIT 10 <br> 
+
+```sql
+--SELECT 2:
+SELECT * FROM receita LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/receita.PNG) <br> 
-SELECT * FROM categoria_receita LIMIT 10 <br> 
+```sql
+--SELECT 3:
+SELECT * FROM categoria_receita LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_receita.PNG) <br> 
-SELECT * FROM despesa LIMIT 10 <br> 
+```sql
+--SELECT 4:
+SELECT * FROM despesa LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/despesa.PNG) <br> 
-SELECT * FROM forma_pag LIMIT 10 <br> 
+```sql
+--SELECT 5:
+SELECT * FROM forma_pag LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/forma_pag.PNG) <br> 
-SELECT * FROM categoria_despesa LIMIT 10 <br> 
+```sql
+--SELECT 6:
+SELECT * FROM categoria_despesa LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/categoria_despesa.PNG) <br> 
-SELECT * FROM parcelamento LIMIT 10 <br> 
+```sql
+--SELECT 7:
+SELECT * FROM parcelamento LIMIT 10;
+```
+
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/parcelamento.PNG) <br> 
-SELECT * FROM pessoa_cartao LIMIT 10 <br> 
+```sql
+--SELECT 8:
+SELECT * FROM pessoa_cartao LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/pessoa_cartao.PNG) <br> 
-SELECT * FROM carato LIMIT 10 <br> 
+```sql
+--SELECT 9:
+SELECT * FROM cartao LIMIT 10;
+```
+ <br> 
 ![Alt text](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.PNG) <br> 
+
 <br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
