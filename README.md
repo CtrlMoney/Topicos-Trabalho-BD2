@@ -110,9 +110,12 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         Referenciar todas as fontes referentes a:
         a) obtenção dos dados
+	Os dados foram obtidos utilizando a linguagem Java.
         b) obtenção de códigos reutilizados
+	Os códigos foram criados pelo grupo, sem necessisade de reutilzar de uma fonte externa.
         c) fontes de estudo para desenvolvimento do projeto
-	Os dados foram obtidos utilizando a linguagem Java. Foi desenvolvido através do Java Faker gerando um milhão e meio de resgistros.
+	Foram utilizados os slides do AVA explicando o Java Faker para geração de um milhão e meio de registros na tabela.
+	
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
