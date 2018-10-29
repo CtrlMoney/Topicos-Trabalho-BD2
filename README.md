@@ -121,7 +121,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
 
         b) inclusão das instruções de inserção dos dados nas referidas tabelas
-	      [Link para o programa faker](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/fake.zip)>
+	      [Link para o programa faker](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/fake.zip)
 
 
 
