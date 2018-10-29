@@ -119,7 +119,9 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
+
         b) inclusão das instruções de inserção dos dados nas referidas tabelas
+[Link para o programa faker](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/fake.zip)
         c) inclusão das instruções para execução de outros procedimentos necessários
 
 
