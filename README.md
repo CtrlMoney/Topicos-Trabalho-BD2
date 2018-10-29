@@ -47,28 +47,28 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
 
 #### 5.3 DECISÕES DE PROJETO
 	PARCELAMENTO: foi criada esta entidade que herda de despesa, para tratar despesas que são parceladas
-	SEM_PARCELAMENTO: foi criada esta entida que herda de despesa, para tirar o atributo data_pag da tabela despesa, pois a data de pagamento de uma despesa parcelada já está cadastrada no cartão
+	SEM_PARCELAMENTO: foi criada esta entidade que herda de despesa, para tirar o atributo data_pag da tabela despesa, pois a data de pagamento de uma despesa parcelada já está cadastrada no cartão
 	FORMA_PAG: foi criada esta entidade para dar ao usuário mais opções de formas de pagamento, além de dinheiro e cartão
 	despesa_fixa: este atributo foi criado para adicionar, nos próximos meses, a despesa que foi marcada como fixa
 	receita_fixa: este atributo foi criado para adicionar, nos próximos meses, a receita que foi marcada como fixa																																					
 #### 5.4 DESCRIÇÃO DOS DADOS 
     
-    USUARIO : Tabela que contém dados básicos comuns a usuario
+    USUARIO : Tabela que contém dados básicos comuns a usuário
 		id : campo que armazena o identificador do usuário
-		login: Campo que armazena o login do usuario
-		senha: Campo que armazena a senha do usuario
+		login: Campo que armazena o login do usuário
+		senha: Campo que armazena a senha do usuário
     PESSOA : Tabela que contém dados sobre pessoa
 		id: campo identificador de pessoa
-		nome: Campo que armazena o nome da pessoa (e usuario)
-		data_nasc: Campo que armazena a data_nasc da pessoa (e usuario)
-		cpf: campo que aramazena o cpf da pessoa (e usuario)
+		nome: Campo que armazena o nome da pessoa (e usuário)
+		data_nasc: Campo que armazena a data_nasc da pessoa (e usuário)
+		cpf: campo que armazena o cpf da pessoa (e usuário)
     CARTAO : Tabela que armazena dados do cartão
 		id: campo que armazena o identificador do cartão
 		nome: campo que armazena o nome do proprietário do cartão
 		limite: campo que armazena o limite de compra do cartão
 		dia_fechamento: campo que armazena o dia de fechamento, de cada mês, do cartão
 		dia_vencimento: campo que armazena da data de vencimento, de cada mês, do cartão
-		numero: campo que armazena o númerodo cartão	
+		numero: campo que armazena o número do cartão	
     DESPESA : Tabela que contém dados sobre a despesa
 		id: campo que armazena o identificador da despesa
 		valor: campo que armazena o valor da despesa
@@ -206,6 +206,14 @@ SELECT * FROM cartao LIMIT 10;
 ```
  <br> 
   <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/cartao.png"></p>
+ <br> 
+ 
+ ```sql
+--SELECT 10:
+SELECT * FROM sem_parcelamento LIMIT 10;
+```
+ <br> 
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/sem_parcelamento.png"></p>
  <br> 
 
 <br>
