@@ -217,7 +217,7 @@ SELECT * FROM cartao LIMIT 10;
 SELECT * FROM sem_parcelamento LIMIT 10;
 ```
  <br> 
-  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/sem_parcelamento.png"></p>
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints9_2/sem_parcelamento.PNG"></p>
  <br> 
 
 <br>
