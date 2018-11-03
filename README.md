@@ -240,6 +240,102 @@ SELECT * FROM sem_parcelamento LIMIT 10;
         d) resultados em forma de tabela/imagem
 <br>
 
+```sql
+a) Deseja-se saber quantos reais uma pessoa pagará de fatura em um determinado mês
+b) 
+CREATE OR REPLACE FUNCTION fatura_cartoes_do_mes(pessoa_id INTEGER, mes INTEGER, ano INTEGER)
+RETURNS DOUBLE PRECISION AS $$
+	SELECT SUM(despesa.valor / parcelamento.num_parcelas) FROM despesa
+	INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
+	INNER JOIN parcelamento on (parcelamento.fk_despesa = despesa.id)
+	WHERE pessoa_usuario.id = pessoa_id AND
+	despesa.data_compra > concat(ano,'-',mes,'-',1)::date AND
+	despesa.data_compra < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
+$$ LANGUAGE SQL;
+
+d) 
+SELECT fatura_cartoes_do_mes(2291, 11,2018);
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/fatura.png"</p>
+<br>
+
+```sql
+a) Deseja-se saber quantos reais uma pessoa pagou à vista em um determinado mês
+b)
+CREATE OR REPLACE FUNCTION despesas_avista_do_mes(pessoa_id INTEGER, mes INTEGER, ano INTEGER)
+RETURNS REAL AS $$
+	SELECT SUM(despesa.valor) FROM despesa
+	INNER JOIN sem_parcelamento on (sem_parcelamento.fk_despesa = despesa.id)
+	INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
+	WHERE pessoa_usuario.id = pessoa_id AND
+	despesa.data_compra > concat(ano,'-',mes,'-',1)::date AND
+	despesa.data_compra < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
+$$ LANGUAGE SQL;
+
+d) SELECT despesas_avista_do_mes(2291, 11,2018);
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/avista.png"</p>
+<br>
+
+```sql
+a) Deseja-se saber quantos reais uma pessoa recebeu em um determinado mês
+b)
+CREATE OR REPLACE FUNCTION receitas_do_mes(pessoa_id INTEGER, mes INTEGER, ano INTEGER)
+RETURNS REAL AS $$
+	SELECT SUM(receita.valor) FROM receita
+	INNER JOIN pessoa_usuario on (pessoa_usuario.id = receita.fk_pessoa_usuario)
+	WHERE pessoa_usuario.id = pessoa_id AND
+	receita.data_recebimento > concat(ano,'-',mes,'-',1)::date AND
+	receita.data_recebimento < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
+$$ LANGUAGE SQL;
+
+d) SELECT receitas_do_mes(2291, 11,2018);
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/receitas.png"</p>
+<br>
+
+```sql
+a) Deseja-se saber qual é o caixa de uma pessoa em um determinado mês
+b)
+CREATE OR REPLACE FUNCTION caixa_do_mes(pessoa_id INTEGER, mes INTEGER, ano INTEGER)
+RETURNS DOUBLE PRECISION AS $$
+	SELECT receitas_do_mes(pessoa_id,mes,ano) - despesas_avista_do_mes(pessoa_id,mes,ano) - fatura_cartoes_do_mes(pessoa_id,mes,ano)
+$$ LANGUAGE SQL;
+
+d) SELECT caixa_do_mes(2291, 11,2018);
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/caixa.png"</p>
+<br>
+	
+```sql
+a) Trigger que apaga o cartão caso ele não se relacione com nenhuma outra pessoa, ao deletar um relacionamento do cartão com uma pessoa
+b)
+CREATE OR REPLACE FUNCTION deleta_cartao_nao_usado()
+RETURNS TRIGGER AS $$
+	BEGIN
+	IF NOT EXISTS (
+		SELECT * FROM pessoa_cartao
+		WHERE pessoa_cartao.fk_cartao = OLD.fk_cartao
+	) THEN
+		DELETE FROM cartao WHERE cartao.id = OLD.fk_cartao;
+	END IF;
+	RETURN NULL;
+	END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE TRIGGER deleta_cartao_nao_usado
+AFTER DELETE ON pessoa_cartao
+FOR EACH ROW
+EXECUTE PROCEDURE deleta_cartao_nao_usado();
+
+d) DELETE FROM pessoa_cartao WHERE pessoa_cartao.fk_cartao = 13;
+```
+
 ## Data de Entrega: (27/09/2018)
 
 #### 9.5	Administração do banco de dados<br>
