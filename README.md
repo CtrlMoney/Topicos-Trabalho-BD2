@@ -110,22 +110,23 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         Referenciar todas as fontes referentes a:
         a) obtenção dos dados
-	Os dados foram obtidos utilizando a linguagem Java.
+		Os dados são gerados por um programa feito em Java tendo com saida um arquivo .sql com os dados
         b) obtenção de códigos reutilizados
-	Os códigos foram criados pelo grupo, sem necessisade de reutilzar de uma fonte externa.
+		Foi utilizado a biblioteca Faker.
         c) fontes de estudo para desenvolvimento do projeto
-	Foram utilizados os slides do AVA explicando o Java Faker para geração de um milhão e meio de registros na tabela.
+		Foram utilizados os slides do AVA explicando o Java Faker e também a documentação do mesmo
 	
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
+[Link para o Modelo Físico](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/ModeloFisico.sql)<br/>
 
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
+	b) inclusão das instruções de inserção dos dados nas referidas tabelas<br/>
+	
 [Link para o programa faker](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/fake.zip)
 
-
-
         c) inclusão das instruções para execução de outros procedimentos necessários
+		Não há outros procedimentos além dos anteriores 
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
