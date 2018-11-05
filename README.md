@@ -253,8 +253,11 @@ RETURNS DOUBLE PRECISION AS $$
 	despesa.data_compra < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
 $$ LANGUAGE SQL;
 
-d) 
+c)
+-- Parâmetros: Id da pessoa, Mês e Ano
 SELECT fatura_cartoes_do_mes(2291, 11,2018);
+d) 
+
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/fatura.png"</p>
@@ -273,7 +276,10 @@ RETURNS REAL AS $$
 	despesa.data_compra < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
 $$ LANGUAGE SQL;
 
-d) SELECT despesas_avista_do_mes(2291, 11,2018);
+c) -- Parâmetros: Id da pessoa, mês e ano
+SELECT despesas_avista_do_mes(2291, 11,2018);
+
+d) 
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/avista.png"</p>
@@ -291,7 +297,10 @@ RETURNS REAL AS $$
 	receita.data_recebimento < (date_trunc('month', concat(ano,'-',mes,'-',1)::date) + interval '1 month' - interval '1 day')::date;
 $$ LANGUAGE SQL;
 
-d) SELECT receitas_do_mes(2291, 11,2018);
+c)-- Parâmetros: Id da pessoa, mês e ano
+SELECT receitas_do_mes(2291, 11,2018);
+
+d) 
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/receitas.png"</p>
@@ -305,7 +314,10 @@ RETURNS DOUBLE PRECISION AS $$
 	SELECT receitas_do_mes(pessoa_id,mes,ano) - despesas_avista_do_mes(pessoa_id,mes,ano) - fatura_cartoes_do_mes(pessoa_id,mes,ano)
 $$ LANGUAGE SQL;
 
-d) SELECT caixa_do_mes(2291, 11,2018);
+c) -- Parâmetros: Id da pessoa, mês e ano
+SELECT caixa_do_mes(2291, 11,2018);
+
+d) 
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/caixa.png"</p>
@@ -333,7 +345,10 @@ AFTER DELETE ON pessoa_cartao
 FOR EACH ROW
 EXECUTE PROCEDURE deleta_cartao_nao_usado();
 
-d) DELETE FROM pessoa_cartao WHERE pessoa_cartao.fk_cartao = 13;
+c) -- Parâmetro: Id do Cartão
+DELETE FROM pessoa_cartao WHERE pessoa_cartao.fk_cartao = 13;
+
+d) 
 ```
 
 ## Data de Entrega: (27/09/2018)
