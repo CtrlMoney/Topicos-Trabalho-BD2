@@ -1,4 +1,4 @@
-# TRABALHO 01 : Ctrl+Money
+# TRABALHO 01 : CtrlMoney
 Trabalho desenvolvido durante a disciplina de BD
 
 # Sumário
@@ -11,11 +11,11 @@ Joel Will : joel-willb@hotmail.com <br>
 Larrisa Motta : larissasantosdamotta@gmail.com<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <b> Ctrl+Money</b>
+Este documento contém a especificação do projeto do banco de dados <b> CtrlMoney</b>
 <br>e motivação da escolha realizada. <br>
 
 Ter um bom controle dos seus gastos é uma necessidade premente de todo cidadão. Tempo é dinheiro. E, dinheiro bem administrado, é sinônimo de sono tranquilo.
-Portanto, Ctrl+Money  vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro e ainda oferece funcionalidades de previsão para auxiliar o melhor planejamento do seu futuro e poder instituir metas a serem cumpridas.
+Portanto, CtrlMoney  vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro e ainda oferece funcionalidades de previsão para auxiliar o melhor planejamento do seu futuro e poder instituir metas a serem cumpridas.
       
 ### 3	MINI-MUNDO<br>
 O sistema opera com usuários cadastrando suas receitas e despesas de cada mês. Um usuário consegue acessar o portal através de um login e uma senha.
