@@ -230,7 +230,24 @@ SELECT * FROM sem_parcelamento LIMIT 10;
         c) as funcionalidades informadas no minimundo ou nos mockups(protótipos), que representarem 
         views do sistema (relatórios, informações disponíveis para os usuários, etc) devem estar 
         presentes aqui. 
+	
+	```sql
+--VISÃO 1:
+SELECT * FROM View_MediaIdade;
+```
+ <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.jpg"></p>
+
 <br>
+
+--VISÃO 2:
+SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
+```
+ <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.jpeg"></p>
+
+<br>
+
 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
         Detalhamento sobre funcionalidade de cada código.
