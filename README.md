@@ -236,7 +236,7 @@ SELECT * FROM sem_parcelamento LIMIT 10;
 SELECT * FROM View_MediaIdade;
 ```
  <br> 
- <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.jpg"></p>
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.png"></p>
  
  
  ```sql
@@ -244,7 +244,7 @@ SELECT * FROM View_MediaIdade;
 SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
 ```
  <br> 
- <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.jpeg"></p>
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.png"></p>
 
 	
 <br>
