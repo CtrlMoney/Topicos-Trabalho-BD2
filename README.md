@@ -231,22 +231,23 @@ SELECT * FROM sem_parcelamento LIMIT 10;
         views do sistema (relatórios, informações disponíveis para os usuários, etc) devem estar 
         presentes aqui. 
 	
-	```sql
---SELECT 1:
+```sql
+--SELECT DA VIEW 1:
 SELECT * FROM View_MediaIdade;
 ```
  <br> 
-  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.jpg"></p>
- <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.jpg"></p>
+ 
  
  ```sql
---SELECT 2:
+--SELECT DA VIEW 2:
 SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
 ```
  <br> 
-  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.jpeg"></p>
- <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.jpeg"></p>
+
 	
+<br>
 <br>
 
 
