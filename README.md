@@ -230,21 +230,30 @@ SELECT * FROM sem_parcelamento LIMIT 10;
         c) as funcionalidades informadas no minimundo ou nos mockups(protótipos), que representarem 
         views do sistema (relatórios, informações disponíveis para os usuários, etc) devem estar 
         presentes aqui. 
-	
+
+
 ```sql
+a) A view contempla uma necessidade interna de descobrir a média de idade dos usuários cadastrados no sistema, pois com esse dado é possível realizar uma análise de possíveis melhorias voltado ao público alvo, ou até mesmo realizar um estudo de como atrair usuários de outras faixas etárias.
+b) Apenas os administradores terão acesso a saber desta informação.
+c) Relatórios
 --SELECT DA VIEW 1:
 SELECT * FROM View_MediaIdade;
 ```
  <br> 
- <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/MediaIdade.png"></p>
- 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/MediaIdade.png"</p>
+<br>
+	
  
  ```sql
+ a) A view seleciona um grupo de usuários que possuem mais despesas do que receitas,podendo levantar estatísticas de usuários que estão endividados.
+ b) Apenas os administradores poderão ter acesso desta informação.
+ c) A funcionalidade seria tanto para o usuário ter um relatório do seu fluxo de caxa, através de um gráfico, quanto para a alimentação interna do prórpio sistema.
 --SELECT DA VIEW 2:
 SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
 ```
  <br> 
- <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/Imagens/prints_9.3/DespesaAcima3k.png"></p>
+  <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/DespesaAcima3k.png"</p>
+
 
 	
 <br>
