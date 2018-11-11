@@ -382,7 +382,8 @@ d)
 ```sql
 a) Deseja-se restringir os valores de receitas sendo maior que 0.
 b)
-CREATE ASSERTION VALORES_VALIDOS
+
+CREATE ASSERTION valores_validos_receita
 	CHECK (NOT EXISTS
 			(SELECT *FROM pessoa_usuario P
 			INNER JOIN receita R on R.fk_pessoa_usuario = P.id
@@ -417,6 +418,46 @@ d)
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/msgErroReceita.jpeg.png"</p>
 <br>
 
+
+```sql
+a) Deseja-se restringir os valores de Despesa sendo maior que 0.
+b)
+
+CREATE ASSERTION valores_validos_despesa
+	CHECK (NOT EXISTS
+			(SELECT * FROM pessoa_usuario P
+			INNER JOIN despesa D on D.fk_pessoa_usuario = P.id
+			WHERE D.valor >= 0));
+
+OBS.: ASSERTION não é suportado no PostegreSQL então foi utilizado trigger
+
+CREATE OR REPLACE FUNCTION verificaValoresDespesa() RETURNS TRIGGER AS'
+	begin
+    	if exists (SELECT * FROM pessoa_usuario P
+					INNER JOIN despesa D on D.fk_pessoa_usuario = P.id
+					WHERE D.valor >= 0) then Raise Exception
+                    		''ERRO, Valor menor que 0'';
+        end if;
+        return null;
+	end;
+'
+LANGUAGE plpgsql;
+
+create trigger checaValoresDespesa
+after insert or update of valor on despesa
+for each row
+execute procedure verificaValoresDespesa();
+
+
+c) 
+insert into despesa (valor,data_compra,fixo,nome,fk_pessoa_usuario,fk_categoria_despesa,fk_forma_pag) values (-10,'11-11-1998',false,'teste',1,1,1);
+
+d) 
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/msgErroDespesa.jpeg"</p>
+<br>
+	
 ## Data de Entrega: (27/09/2018)
 
 #### 9.5	Administração do banco de dados<br>
