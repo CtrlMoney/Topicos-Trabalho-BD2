@@ -477,6 +477,12 @@ d)
         e) especificar a quantidade de registros inseridos em cada tabela
         Para melhor compreensão verifiquem o exemplo na base de testes:<br>
         https://github.com/discipbd2/base-de-testes-locadora
+	
+d) Tempo de inserção de todos os dados gerados no faker é de aproximadamente 4 minutos e 34 segundos
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/TimeInser%C3%A7%C3%A3o.png"</p>
+<br>
+
         
 ## Data de Entrega: (31/10/2018)
 
