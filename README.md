@@ -483,6 +483,15 @@ d) Tempo de inserção de todos os dados gerados no faker é de aproximadamente 
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/TimeInser%C3%A7%C3%A3o.png"</p>
 <br>
 
+e)
+```sql
+SELECT COUNT(*) as Qnt_Rows_Cartao FROM cartao;
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCartao.PNG"</p>
+<br>
+
+
         
 ## Data de Entrega: (31/10/2018)
 
