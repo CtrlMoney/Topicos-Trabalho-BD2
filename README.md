@@ -495,11 +495,33 @@ SELECT COUNT(*) as Qnt_Rows_Cartao FROM cartao;
 ```sql
 --Quantidade de registros na tabela "categoria_despesa"
 SELECT COUNT(*) as Qnt_Rows_categoria_despesa FROM categoria_despesa;
-
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCatDespesa.PNG"</p>
 <br>
+
+```sql
+--Quantidade de registros na tabela "categoria_receita"
+SELECT COUNT(*) as Qnt_Rows_categoria_receita FROM categoria_receita;
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCatReceita.PNG"</p>
+<br>
+	
+
+SELECT COUNT(*) as Qnt_Rows_despesa FROM despesa;
+
+SELECT COUNT(*) as Qnt_Rows_forma_pag FROM forma_pag;
+
+SELECT COUNT(*) as Qnt_Rows_parcelamento FROM parcelamento;
+
+SELECT COUNT(*) as Qnt_Rows_pessoa_cartao FROM pessoa_cartao;
+
+SELECT COUNT(*) as Qnt_Rows_pessoa_usuario FROM pessoa_usuario;
+
+SELECT COUNT(*) as Qnt_Rows_receita FROM receita;
+
+SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
         
 ## Data de Entrega: (31/10/2018)
 
