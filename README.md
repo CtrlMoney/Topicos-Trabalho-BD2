@@ -516,8 +516,13 @@ SELECT COUNT(*) as Qnt_Rows_despesa FROM despesa;
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsDespesa.PNG"</p>
 <br>
 
-
+```sql
+--Quantidade de registros na tabela "forma_pag"
 SELECT COUNT(*) as Qnt_Rows_forma_pag FROM forma_pag;
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsFormaPag.PNG"</p>
+<br>
 
 SELECT COUNT(*) as Qnt_Rows_parcelamento FROM parcelamento;
 
