@@ -549,6 +549,20 @@ SELECT COUNT(*) as Qnt_Rows_pessoa_usuario FROM pessoa_usuario;
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsPessoaUsuario.PNG"</p>
 <br>
 
+```sql
+--Quantidade de registros na tabela "receita"
+SELECT COUNT(*) as Qnt_Rows_receita FROM receita;
+```
+
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsReceita.PNG"</p>
+<br>
+
+```sql
+--Quantidade de registros na tabela "sem_parcelamento"
+SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
+```
+
         
 ## Data de Entrega: (31/10/2018)
 
