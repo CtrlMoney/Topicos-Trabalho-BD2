@@ -524,15 +524,14 @@ SELECT COUNT(*) as Qnt_Rows_forma_pag FROM forma_pag;
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsFormaPag.PNG"</p>
 <br>
 
+```sql
+--Quantidade de registros na tabela "parcelamento"
 SELECT COUNT(*) as Qnt_Rows_parcelamento FROM parcelamento;
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rows_parcelamento.PNG"</p>
+<br>
 
-SELECT COUNT(*) as Qnt_Rows_pessoa_cartao FROM pessoa_cartao;
-
-SELECT COUNT(*) as Qnt_Rows_pessoa_usuario FROM pessoa_usuario;
-
-SELECT COUNT(*) as Qnt_Rows_receita FROM receita;
-
-SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
         
 ## Data de Entrega: (31/10/2018)
 
