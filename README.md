@@ -485,13 +485,21 @@ d) Tempo de inserção de todos os dados gerados no faker é de aproximadamente 
 
 e)
 ```sql
+--Quantidade de registros na tabela "cartao"
 SELECT COUNT(*) as Qnt_Rows_Cartao FROM cartao;
 ```
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCartao.PNG"</p>
 <br>
 
+```sql
+--Quantidade de registros na tabela "categoria_despesa"
+SELECT COUNT(*) as Qnt_Rows_categoria_despesa FROM categoria_despesa;
 
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCatDespesa.PNG"</p>
+<br>
         
 ## Data de Entrega: (31/10/2018)
 
