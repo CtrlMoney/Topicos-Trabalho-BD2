@@ -508,8 +508,14 @@ SELECT COUNT(*) as Qnt_Rows_categoria_receita FROM categoria_receita;
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsCatReceita.PNG"</p>
 <br>
 	
-
+```sql
+--Quantidade de registros na tabela "despesa"
 SELECT COUNT(*) as Qnt_Rows_despesa FROM despesa;
+```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsDespesa.PNG"</p>
+<br>
+
 
 SELECT COUNT(*) as Qnt_Rows_forma_pag FROM forma_pag;
 
