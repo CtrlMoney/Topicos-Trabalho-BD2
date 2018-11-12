@@ -536,7 +536,6 @@ SELECT COUNT(*) as Qnt_Rows_parcelamento FROM parcelamento;
 --Quantidade de registros na tabela "pessoa_cartao"
 SELECT COUNT(*) as Qnt_Rows_pessoa_cartao FROM pessoa_cartao;
 ```
-
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsPessoaCartao.PNG"</p>
 <br>
@@ -553,7 +552,6 @@ SELECT COUNT(*) as Qnt_Rows_pessoa_usuario FROM pessoa_usuario;
 --Quantidade de registros na tabela "receita"
 SELECT COUNT(*) as Qnt_Rows_receita FROM receita;
 ```
-
 <br>
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsReceita.PNG"</p>
 <br>
@@ -562,7 +560,9 @@ SELECT COUNT(*) as Qnt_Rows_receita FROM receita;
 --Quantidade de registros na tabela "sem_parcelamento"
 SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
 ```
-
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsSemParcelamento.PNG"</p>
+<br>
         
 ## Data de Entrega: (31/10/2018)
 
