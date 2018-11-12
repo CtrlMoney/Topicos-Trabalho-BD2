@@ -532,6 +532,15 @@ SELECT COUNT(*) as Qnt_Rows_parcelamento FROM parcelamento;
 <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rows_parcelamento.PNG"</p>
 <br>
 
+```sql
+--Quantidade de registros na tabela "pessoa_cartao"
+SELECT COUNT(*) as Qnt_Rows_pessoa_cartao FROM pessoa_cartao;
+```
+
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.6/rowsPessoaCartao.PNG"</p>
+<br>
+
         
 ## Data de Entrega: (31/10/2018)
 
