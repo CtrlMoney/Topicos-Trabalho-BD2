@@ -255,7 +255,7 @@ SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
   <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/DespesaAcima3k.png"</p>
 
 ```sql
-a) A view contempla uma necessidade dos usuários visualizar as dívidas a vista.
+a) A view contempla uma necessidade dos usuários visualizar dívidas que são pagas a vista.
 b) Os usuários terão acesso.
 c) Relatórios
 --SELECT DA VIEW 3:
@@ -266,7 +266,7 @@ SELECT * FROM View_DividasAVista;
 <br>
 	
 ```sql
-a) A view contempla uma necessidade dos usuários visualizar as dívidas parceladas.
+a) A view contempla uma necessidade dos usuários visualizar dívidas que são parceladas.
 b) Os usuários terão acesso de visualizar as parcelas.
 c) Relatórios
 --SELECT DA VIEW 4:
@@ -277,7 +277,7 @@ SELECT * FROM View_DividasParceladas;
 <br>
 
 ```sql
-a) A view contempla uma necessidade dos usuários visualizar as suas receitas e respectivas categorias.
+a) A view contempla uma necessidade dos usuários visualizar suas receitas e respectivas categorias de cada uma.
 b) Os usuários terão acesso de visualizar suas receitas, valor e categoria.
 c) Relatórios
 --SELECT DA VIEW 5:
