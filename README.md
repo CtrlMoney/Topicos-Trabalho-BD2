@@ -267,7 +267,7 @@ SELECT * FROM View_DividasAVista;
 	
 ```sql
 a) A view contempla uma necessidade dos usuários visualizar dívidas que são parceladas.
-b) Os usuários terão acesso de visualizar as parcelas.
+b) Os usuários terão acesso de visualização das parcelas, contemplando a categoria,nome da despesa e valor.
 c) Relatórios
 --SELECT DA VIEW 4:
 SELECT * FROM View_DividasParceladas;
