@@ -587,6 +587,50 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
     obtendo-se a media dos outros valores como resultado médio final.
 <br>
 
+a)
+Índices utilizados:<br>
+create index idx_despesa on despesa(fk_pessoa_usuario); <br>
+create index idx_receita on receita(fk_pessoa_usuario); <br>
+create index idx_parcelamento on parcelamento(fk_cartao); <br>
+
+<p>
+Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
+	
+</p><br>
+<p>
+Os índices utilizados são para otimizar as consultas mais utilizadas no sistema, que são para consultar as despesas com ou sem parcelamento de uma pessoa em um determinado mês, e despesas do cartão de um determinado mês. Abaixo estão alguns exemplos de consulta:
+</p><br>
+
+```sql
+--Consulta para despesas parceladas de um mês
+SELECT parcelamento.*,despesa.* FROM despesa
+INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
+INNER JOIN parcelamento on (parcelamento.fk_despesa = despesa.id)
+WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
+```
+
+```sql
+--Consulta para despesas de um cartão para um determinado mês
+SELECT p.*,d.* FROM despesa d 
+JOIN parcelamento p ON (p.fk_despesa = d.id)
+JOIN cartao c ON (p.fk_cartao = c.id)
+JOIN pessoa_cartao pc ON (pc.fk_cartao = c.id)
+JOIN pessoa_usuario pu ON (pu.id = pc.fk_usuario)
+WHERE WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
+```
+
+```sql
+--Consulta para despesas não parceladas de um determinado mês
+SELECT sem_parcelamento.*,despesa.* FROM despesa
+INNER JOIN sem_parcelamento on (sem_parcelamento.fk_despesa = despesa.id)
+INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
+WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
+```
+
+Referência :
+https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028
+
+
 ## Data de Entrega: (22/11/2018)
 
 <br>   
