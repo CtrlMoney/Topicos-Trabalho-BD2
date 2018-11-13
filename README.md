@@ -254,8 +254,39 @@ SELECT * FROM View_Despesas_Acima3K_ou_Receitas_Abaixo1k;
  <br> 
   <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/DespesaAcima3k.png"</p>
 
-
+```sql
+a) A view contempla uma necessidade dos usuários visualizar as dívidas a vista.
+b) Os usuários terão acesso.
+c) Relatórios
+--SELECT DA VIEW 3:
+SELECT * FROM View_DividasAVista;
+```
+ <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/dividas_avista.png"</p>
+<br>
 	
+```sql
+a) A view contempla uma necessidade dos usuários visualizar as dívidas parceladas.
+b) Os usuários terão acesso de visualizar as parcelas.
+c) Relatórios
+--SELECT DA VIEW 4:
+SELECT * FROM View_DividasParceladas;
+```
+ <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/dividas_parceladas.png"</p>
+<br>
+
+```sql
+a) A view contempla uma necessidade dos usuários visualizar as suas receitas e respectivas categorias.
+b) Os usuários terão acesso de visualizar suas receitas, valor e categoria.
+c) Relatórios
+--SELECT DA VIEW 5:
+SELECT * FROM View_Receitas;
+```
+ <br> 
+ <p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.3/receitas_view.png"</p>
+<br>
+		
 <br>
 <br>
 
