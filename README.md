@@ -409,6 +409,9 @@ DELETE FROM pessoa_cartao WHERE pessoa_cartao.fk_cartao = 13;
 
 d) 
 ```
+<br>
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/prints_9.4/deleta_cartao_nao_usado.PNG"</p>
+<br>
 
 ```sql
 a) Deseja-se restringir os valores de receitas sendo maior que 0.
