@@ -121,7 +121,7 @@ Observação: as categorias são fixas baseadas em aplicaitvos reais pesqusados 
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
 [Link para o Modelo Físico](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Modelos/ModeloFisico.sql)<br/>
 
-	b) inclusão das instruções de inserção dos dados nas referidas tabelas<br/>
+	b) inclusão das instruções de inserção dos dados nas referidas tabelas
 	
 [Link para o programa faker](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/fake.zip)
 
