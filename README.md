@@ -649,8 +649,8 @@ SELECT p.*,d.* FROM despesa d
 JOIN parcelamento p ON (p.fk_despesa = d.id)
 JOIN cartao c ON (p.fk_cartao = c.id)
 JOIN pessoa_cartao pc ON (pc.fk_cartao = c.id)
-JOIN pessoa_usuario pu ON (pu.id = pc.fk_usuario)
-WHERE WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
+JOIN pessoa_usuario pu ON (pu.id = pc.fk_pessoa_usuario)
+WHERE pu.id = 2291 AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30';
 ```
 
 ```sql
