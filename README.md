@@ -623,9 +623,11 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
 
 a)
 Índices utilizados:<br>
-create index idx_despesa on despesa(fk_pessoa_usuario); <br>
-create index idx_receita on receita(fk_pessoa_usuario); <br>
-create index idx_parcelamento on parcelamento(fk_cartao); <br>
+```sql
+CREATE INDEX idx_despesa ON despesa(fk_pessoa_usuario); 
+CREATE INDEX idx_receita ON receita(fk_pessoa_usuario); 
+CREATE INDEX idx_parcelamento ON parcelamento(fk_cartao); 
+```
 
 <p>
 Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
@@ -645,12 +647,10 @@ WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despes
 
 ```sql
 --Consulta para despesas de um cartão para um determinado mês
-SELECT p.*,d.* FROM despesa d 
+SELECT d.* as qtd_d FROM despesa d 
 JOIN parcelamento p ON (p.fk_despesa = d.id)
 JOIN cartao c ON (p.fk_cartao = c.id)
-JOIN pessoa_cartao pc ON (pc.fk_cartao = c.id)
-JOIN pessoa_usuario pu ON (pu.id = pc.fk_pessoa_usuario)
-WHERE pu.id = 2291 AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30';
+WHERE c.id =  85107 AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30'
 ```
 
 ```sql
