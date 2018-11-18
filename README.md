@@ -633,6 +633,13 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
     obtendo-se a media dos outros valores como resultado médio final.
 <br>
 
+
+[Apresentação em PDF](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Apresenta%C3%A7%C3%A3o%20%C3%ADndices%20-%20BD2.pdf)
+
+[Apresentação docs Google](https://docs.google.com/presentation/d/1FYhVtQqbM2VrTlBEtrnqJfffn33vyJW2s9wJzsmRfBs/edit#slide=id.g481a856c00_1_312)
+
+[PDF com os dados coletados com o índice](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Coleta%20de%20dados%20%C3%ADndices.pdf)
+
 a)
 Índices utilizados:<br>
 ```sql
