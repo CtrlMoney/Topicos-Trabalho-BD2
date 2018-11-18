@@ -602,12 +602,15 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
 
 #### 9.7	Backup do Banco de Dados<br>
         Detalhamento do backup.
-        a) Tempo
-        b) Tamanho
+        a) Tempo: .backup(15.47 s), .sql(6.25 s)  
+        b) Tamanho: .backup(65.6 MB), .sql(219.5 MB)
         c) Teste de restauração (backup)
-        d) Tempo para restauração
-        e) Teste de restauração (script sql)
-        f) Tempo para restauração (script sql)
+<p align="center"><img src="https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/Imagens/Prints_9.7/Print%20restore%20custom.png"</p>
+<br>
+        
+	d) Tempo para restauração: 22.13 s
+        e) Teste de restauração (script sql): Não rodou
+        f) Tempo para restauração (script sql): Não rodou
 <br>
 
 
