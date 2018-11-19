@@ -633,30 +633,16 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
     obtendo-se a media dos outros valores como resultado médio final.
 <br>
 
+Exercício sobre aplicação de índices e testes de performance completo:<br>
 
 [Apresentação em PDF](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Apresenta%C3%A7%C3%A3o%20%C3%ADndices%20-%20BD2.pdf)
 
 [Apresentação docs Google](https://docs.google.com/presentation/d/1FYhVtQqbM2VrTlBEtrnqJfffn33vyJW2s9wJzsmRfBs/edit#slide=id.g481a856c00_1_312)
 
-[PDF com os dados coletados com o índice](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Coleta%20de%20dados%20%C3%ADndices.pdf)
+[PDF com os dados coletados através dos testes](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Coleta%20de%20dados%20%C3%ADndices.pdf)
 
-a)
-Índices utilizados:<br>
-```sql
-CREATE INDEX idx_despesa ON despesa(fk_pessoa_usuario); 
-CREATE INDEX idx_receita ON receita(fk_pessoa_usuario); 
-CREATE INDEX idx_parcelamento ON parcelamento(fk_cartao); 
-```
-
-<p>
-Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
-	
-</p><br>
-<p>
-Os índices utilizados são para otimizar as consultas mais utilizadas no sistema, que são para consultar as despesas com ou sem parcelamento de uma pessoa em um determinado mês, e despesas do cartão de um determinado mês. Abaixo estão alguns exemplos de consulta:
-</p><br>
-
-
+RESUMO:
+Consultas utilizadas:
 ```sql
 --Consulta para despesas de um cartão para um determinado mês(Query 1)
 SELECT d.* as qtd_d FROM despesa d 
@@ -690,6 +676,23 @@ JOIN categoria_receita cr ON (cr.id = r.fk_categoria_receita)
 JOIN pessoa_usuario pu ON (pu.id = r.fk_pessoa_usuario)
 WHERE pu.id = 9242 AND cr.id = 2 AND r.data_recebimento > '2018-11-01' AND r.data_recebimento < '2018-11-30';
 ```
+Índices utilizados:<br>
+```sql
+CREATE INDEX idx_despesa ON despesa(fk_pessoa_usuario); 
+CREATE INDEX idx_receita ON receita(fk_pessoa_usuario); 
+CREATE INDEX idx_parcelamento ON parcelamento(fk_cartao); 
+```
+
+<p>
+Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
+	
+</p><br>
+<p>
+Os índices utilizados são para otimizar as consultas mais utilizadas no sistema, que são para consultar as despesas com ou sem parcelamento de uma pessoa em um determinado mês, e despesas do cartão de um determinado mês. Abaixo estão alguns exemplos de consulta:
+</p><br>
+
+
+
 
 Referência :
 https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028
