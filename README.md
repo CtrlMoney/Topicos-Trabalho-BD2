@@ -633,7 +633,7 @@ SELECT COUNT(*) as Qnt_Rows_sem_parcelamento FROM sem_parcelamento;
     obtendo-se a media dos outros valores como resultado médio final.
 <br>
 
-Exercício sobre aplicação de índices e testes de performance completo:<br>
+Exercício completo:<br>
 
 [Apresentação em PDF](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Apresenta%C3%A7%C3%A3o%20%C3%ADndices%20-%20BD2.pdf)
 
@@ -679,7 +679,7 @@ WHERE pu.id = 9242 AND cr.id = 2 AND r.data_recebimento > '2018-11-01' AND r.dat
 ```
 Índices utilizados:<br>
 <p>
-Os principais índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
+Os principais índices utilizados são do tipo B-tree, pois utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
 </p><br>
 
 Índices B-tree:<br>
@@ -705,7 +705,7 @@ CREATE INDEX gin_idx_despesa ON despesa USING gin (nome gin_trgm_ops);
 CREATE INDEX gist_idx_parc ON parcelamento USING gist(fk_cartao);
 ```
 
-Índice HASH:<br>
+Índice HASH (usado apenas para fins de testes de performance):<br>
 ```sql
 CREATE INDEX hash_idx_despesa ON despesa USING hash (fk_pessoa_usuario)
 ```
