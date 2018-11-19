@@ -641,8 +641,8 @@ Exercício sobre aplicação de índices e testes de performance completo:<br>
 
 [PDF com os dados coletados através dos testes](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/blob/master/9.8/Coleta%20de%20dados%20%C3%ADndices.pdf)
 
-RESUMO:
-Consultas utilizadas:
+RESUMO:<br>
+Consultas utilizadas:<br>
 ```sql
 --Consulta para despesas de um cartão para um determinado mês(Query 1)
 SELECT d.* as qtd_d FROM despesa d 
@@ -666,7 +666,8 @@ JOIN parcelamento p ON (p.fk_despesa = d.id)
 JOIN cartao c ON (c.id = p.fk_cartao) 
 JOIN pessoa_cartao pc ON (c.id = pc.fk_cartao)
 JOIN pessoa_usuario pu ON (pu.id = pc.fk_pessoa_usuario)
-WHERE pc.fk_pessoa_usuario = 2291 AND pc.fk_cartao = 19247  AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30';
+WHERE pc.fk_pessoa_usuario = 2291 AND pc.fk_cartao = 19247  
+AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30';
 ```
 
 ```sql
@@ -677,25 +678,41 @@ JOIN pessoa_usuario pu ON (pu.id = r.fk_pessoa_usuario)
 WHERE pu.id = 9242 AND cr.id = 2 AND r.data_recebimento > '2018-11-01' AND r.data_recebimento < '2018-11-30';
 ```
 Índices utilizados:<br>
+<p>
+Os principais índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
+</p><br>
+
+Índices B-tree:<br>
 ```sql
 CREATE INDEX idx_despesa ON despesa(fk_pessoa_usuario); 
 CREATE INDEX idx_receita ON receita(fk_pessoa_usuario); 
 CREATE INDEX idx_parcelamento ON parcelamento(fk_cartao); 
 ```
+Índice B-tree multicolumn:<br>
+```sql
+CREATE INDEX mult_idx_pc ON pessoa_cartao (fk_cartao, fk_pessoa_usuario);
+```
 
-<p>
-Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados (para os casos mais comuns) e utiliza o algoritmo "árvore binária balanceada" que é bem eficiente, tendo como complexidade do algotimo O(log n). 
-	
-</p><br>
-<p>
-Os índices utilizados são para otimizar as consultas mais utilizadas no sistema, que são para consultar as despesas com ou sem parcelamento de uma pessoa em um determinado mês, e despesas do cartão de um determinado mês. Abaixo estão alguns exemplos de consulta:
-</p><br>
+Outros tipos de índices:<br>
 
+Índice GIN:<br>
+```sql
+CREATE INDEX gin_idx_despesa ON despesa USING gin (nome gin_trgm_ops);
+```
 
+Índice GIST:<br>
+```sql
+CREATE INDEX gist_idx_parc ON parcelamento USING gist(fk_cartao);
+```
 
+Índice HASH:<br>
+```sql
+CREATE INDEX hash_idx_despesa ON despesa USING hash (fk_pessoa_usuario)
+```
 
-Referência :
-https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028
+Referência :<br>
+Slides do AVA (disciplina BD2) <br>
+https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028<br>
 
 
 ## Data de Entrega: (22/11/2018)
