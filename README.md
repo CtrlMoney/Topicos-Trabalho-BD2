@@ -656,16 +656,9 @@ Todos os índices utilizados são do tipo B-tree, pois é um dos mais utilizados
 Os índices utilizados são para otimizar as consultas mais utilizadas no sistema, que são para consultar as despesas com ou sem parcelamento de uma pessoa em um determinado mês, e despesas do cartão de um determinado mês. Abaixo estão alguns exemplos de consulta:
 </p><br>
 
-```sql
---Consulta para despesas parceladas de um mês
-SELECT parcelamento.*,despesa.* FROM despesa
-INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
-INNER JOIN parcelamento on (parcelamento.fk_despesa = despesa.id)
-WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
-```
 
 ```sql
---Consulta para despesas de um cartão para um determinado mês
+--Consulta para despesas de um cartão para um determinado mês(Query 1)
 SELECT d.* as qtd_d FROM despesa d 
 JOIN parcelamento p ON (p.fk_despesa = d.id)
 JOIN cartao c ON (p.fk_cartao = c.id)
@@ -673,11 +666,29 @@ WHERE c.id =  85107 AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-1
 ```
 
 ```sql
---Consulta para despesas não parceladas de um determinado mês
-SELECT sem_parcelamento.*,despesa.* FROM despesa
-INNER JOIN sem_parcelamento on (sem_parcelamento.fk_despesa = despesa.id)
+--Consulta para despesas parceladas de um mês (Query 2)
+SELECT parcelamento.*,despesa.* FROM despesa
 INNER JOIN pessoa_usuario on (pessoa_usuario.id = despesa.fk_pessoa_usuario)
+INNER JOIN parcelamento on (parcelamento.fk_despesa = despesa.id)
 WHERE pessoa_usuario.id = 2291 AND despesa.data_compra > '2018-11-01' AND despesa.data_compra < '2018-11-30';
+```
+
+```sql
+--Consulta para despesas de um mês de um cartão e de uma determinada pessoa (Query 3)
+SELECT d.* FROM despesa d 
+JOIN parcelamento p ON (p.fk_despesa = d.id)
+JOIN cartao c ON (c.id = p.fk_cartao) 
+JOIN pessoa_cartao pc ON (c.id = pc.fk_cartao)
+JOIN pessoa_usuario pu ON (pu.id = pc.fk_pessoa_usuario)
+WHERE pc.fk_pessoa_usuario = 2291 AND pc.fk_cartao = 19247  AND d.data_compra > '2018-11-01' AND d.data_compra < '2018-11-30';
+```
+
+```sql
+--Consulta de receitas de uma pessoa, e um determinado mês e de uma determinada categoria (Query 4)
+SELECT r.* FROM receita r
+JOIN categoria_receita cr ON (cr.id = r.fk_categoria_receita)
+JOIN pessoa_usuario pu ON (pu.id = r.fk_pessoa_usuario)
+WHERE pu.id = 9242 AND cr.id = 2 AND r.data_recebimento > '2018-11-01' AND r.data_recebimento < '2018-11-30';
 ```
 
 Referência :
