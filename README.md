@@ -520,6 +520,10 @@ d)
         e) especificar a quantidade de registros inseridos em cada tabela
         Para melhor compreensão verifiquem o exemplo na base de testes:<br>
         https://github.com/discipbd2/base-de-testes-locadora
+
+a) Tabelas de Despesa e de Receita
+b) Parcelamento, Sem Parcelamento
+c) Cartão, Pessoa_Cartao, Pessoa_usuarop
 	
 d) Tempo de inserção de todos os dados gerados no faker é de aproximadamente 4 minutos e 34 segundos
 <br>
