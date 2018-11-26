@@ -720,6 +720,11 @@ Referência :<br>
 Slides do AVA (disciplina BD2) <br>
 https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028<br>
 
+#### EXTRA - RELATÓRIO JUPYTER<br>
+
+[Relatório Jupyter](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/relatorio/relatoro.ipynb)
+
+
 
 ## Data de Entrega: (22/11/2018)
 
