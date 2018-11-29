@@ -505,13 +505,14 @@ d)
 <br>
 
         
-        a) Criados roles  para gerenciar a autorização de acesso na base de dados esses são:
-	DBA: Acesso total ao banco de produção e autorização para realizar todas as operações
-	Estagiário: Acesso apenas ao Banco Local, onde todas as querys executadas por ele passaria por uma análise antes de serem 		realizadas no banco de produção
-	Administradores: Acesso total ao Banco de Produção e autorização para realizar todas as operações.
+        a) 
+		Criados roles  para gerenciar a autorização de acesso na base de dados esses são:
+		  -DBA: Acesso total ao banco de produção e autorização para realizar todas as operações
+		  -Estagiário: Acesso apenas ao Banco Local, onde todas as querys executadas por ele passaria
+		  por uma análise antes de serem realizadas no banco de produção
+		  -Administradores: Acesso total ao Banco de Produção e autorização para realizar todas as operações.
 	
         b) 
-	
 		Possivelmente o que irá determinar a quantidade de recursos necessários será a quantidade de dados
 		armazenados nas tabelas Receita e Despesa (principalmente), sendo que se terá maior uso durante o dia
 		5 e 12 de cada mês, já que nesse período geralmente é feito os pagamentos dos sálarios, e por isso as 
