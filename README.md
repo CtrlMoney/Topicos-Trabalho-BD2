@@ -499,18 +499,30 @@ d)
         seguintes atividades.
         a) Segurança e autorização de acesso: especificação básica de configurações de acesso remoto
         b) Estimativas de aquisição de recursos para armazenamento e processamento da informação
+        c) Planejamento de rotinas de manutenção e monitoramento do banco
+        d) Plano com frequencia de análises visando otimização de performance
+
+<br>
+
+        
+        a) 
+	
+        b) 
+	
 		Possivelmente o que irá determinar a quantidade de recursos necessários será a quantidade de dados
 		armazenados nas tabelas Receita e Despesa (principalmente), sendo que se terá maior uso durante o dia
 		5 e 12 de cada mês, já que nesse período geralmente é feito os pagamentos dos sálarios, e por isso as 
 		pessoas costumam gastar dinheiro, ou seja, mais despesas no sistema. Logo se estima que se terá mais
 		aquisições de recursos durante esse período.
-        c) Planejamento de rotinas de manutenção e monitoramento do banco
+		
+        c) 
 		Pelo mesmo motivo descrito na letra "b", pode se dizer que, deve se ter maior atenção em relação de
 		monitoramento e manutenção do banco nos períodos de pagamento de salário
-        d) Plano com frequencia de análises visando otimização de performance
+		
+        d)
 		Também pelo mesmo motivo da letra "b", as análises devem ser feitas logo após essa alta de inserções
-		de dados no banco, para saber se com esses novos dados, alguma consulta foi prejudicada em relação a desempenho
-<br>
+		de dados no banco, para saber se com esses novos dados, alguma consulta foi prejudicada em relação a
+		desempenho
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
         a) principal tabela do sistema deve ter no mínimo 1,5 milhão de registros
