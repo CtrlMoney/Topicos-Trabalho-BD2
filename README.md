@@ -505,7 +505,10 @@ d)
 <br>
 
         
-        a) 
+        a) Criados roles  para gerenciar a autorização de acesso na base de dados esses são:
+	DBA: Acesso total ao banco de produção e autorização para realizar todas as operações
+	Estagiário: Acesso apenas ao Banco Local, onde todas as querys executadas por ele passaria por uma análise antes de serem 		realizadas no banco de produção
+	Administradores: Acesso total ao Banco de Produção e autorização para realizar todas as operações.
 	
         b) 
 	
