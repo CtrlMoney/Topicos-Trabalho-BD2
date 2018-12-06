@@ -740,6 +740,10 @@ https://www.devmedia.com.br/trabalhando-com-indices-no-postgresql/34028<br>
 
 [Relatório Jupyter](https://github.com/CtrlMoney/Topicos-Trabalho-BD2/tree/master/relatorio/relatoro.ipynb)
 
+#### EXTRA - Github POO2<br>
+
+[Link Git POO2](https://github.com/joelwb/CtrlMoney)
+
 
 
 ## Data de Entrega: (22/11/2018)
